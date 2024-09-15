@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrimonial Biodata</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <div class="profile-pic">
+                <img src="photo2.jpeg" alt="Profile Picture">
+            </div>
+            <div class="personal-details">
+                <h1>Tusar Choudhary</h1>
+                <p><strong>Age:</strong> 26 Years</p>
+                <p><strong>Height:</strong> 5'10"</p>
+                <p><strong>Religion:</strong> Hindu</p>
+                <p><strong>Caste:</strong> Jat (Choudhary)</p>
+                <p><strong>Email:</strong> tusarchoudhary19@gmail.com</p>
+                <p><strong>Phone:</strong> +91 9079857902</p>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <section class="about">
+            <h2>About Me</h2>
+            <p>
+                I am a creative and passionate individual, working as Computer teacher and Software Engineer. I value family, culture, and traditions, while also maintaining a progressive outlook towards life.
+            </p>
+        </section>
+
+        <!-- Hobbies Section -->
+        <section class="hobbies">
+            <h2>Hobbies & Interests</h2>
+            <ul>
+                <li>Traveling</li>
+                <li>Reading</li>
+                <li>Sports</li>
+                <li><strong>Sex</strong></li>
+            </ul>
+        </section>
+
+        <!-- Profession Section -->
+        <section class="profession">
+            <h2>Profession</h2>
+            <p><strong>Job Title:</strong> Govt Computer teacher and Software Engineer</p>
+            <p><strong>Company:</strong> Rajasthan Govt</p>
+            <p>I work as a software engineer with over 5 years of experience in web development and designing innovative solutions to real-world problems.</p>
+        </section>
+
+        <!-- Family Details Section -->
+        <section class="family">
+            <h2>Family Details</h2>
+            <p><strong>Father:</strong> Late Rajendra Kumar Choudhary (LIC)</p>
+            <p><strong>Mother:</strong> Suman Lata Choudhary (Homemaker)</p>
+            <p><strong>Siblings:</strong> 1 Brother (Unmarried) - (Postal assistant- Central Govt)</p>
+            <p>We are a close-knit family that values respect, traditions, and togetherness. We believe in living a balanced life with a blend of modern and traditional values.</p>
+        </section>
+
+        <!-- Photo Gallery Slider Section -->
+        <section class="gallery">
+            <h2>Photo Gallery</h2>
+            <div class="slider">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="img1" checked>
+                    <input type="radio" name="radio-btn" id="img2">
+                    <input type="radio" name="radio-btn" id="img3">
+                    <input type="radio" name="radio-btn" id="img4">
+
+                    <div class="slide first">
+                        <img src="photo1.jpeg" alt="Photo 1">
+                    </div>
+                    <div class="slide">
+                        <img src="photo2.jpeg" alt="Photo 2">
+                    </div>
+                    <div class="slide">
+                        <img src="photo3.jpeg" alt="Photo 3">
+                    </div>
+                    
+
+                    <!-- Automatic Navigation -->
+                    <div class="nav-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div class="auto-btn4"></div>
+                    </div>
+                </div>
+
+                <!-- Manual Navigation -->
+                <div class="nav-manual">
+                    <label for="img1" class="manual-btn"></label>
+                    <label for="img2" class="manual-btn"></label>
+                    <label for="img3" class="manual-btn"></label>
+                    <label for="img4" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- JS for Auto-Sliding -->
+    <script>
+        let counter = 1;
+        setInterval(function () {
+            document.getElementById('img' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 5000);
+    </script>
+</body>
+</html>
